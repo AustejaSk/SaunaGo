@@ -86,7 +86,7 @@ const Login = () => {
             {user ? (
                 <div className="user-logged-in-page">
                     <h1>Welcome {user?.email}</h1>
-                    <button className="button" onClick={signOutUser}>Sign out</button>
+                    <button className="button sign-out-btn" onClick={signOutUser}>Sign out</button>
                 </div> 
             ) : (
                 <div className="login-page">
