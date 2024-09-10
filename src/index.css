@@ -114,6 +114,7 @@ footer > p {
   background-position: center;
   height: calc(100vh - 155px);
   padding: 0 16px 40px;
+  margin-bottom: -1px;
 }
 
 .hero-section > h1 {
