@@ -6,7 +6,9 @@ import userIcon from '../images/user-icon.svg'
 const Header = () => {
     return (
         <header>
-            <Link to="/"><img className="logo" src={logo} alt="SaunaGo logo with a lotus flower icon "/></Link>
+            <Link to="/">
+                <img className="logo" src={logo} alt="SaunaGo logo with a lotus flower icon." />
+            </Link>
             <nav> 
                 <NavLink 
                     to="/host"
@@ -26,10 +28,8 @@ const Header = () => {
                 >
                     Saunas
                 </NavLink>
-                <NavLink
-                    to="/login"
-                >
-                    <img src={userIcon} />
+                <NavLink to="/login">
+                    <img className='user-icon' src={userIcon} alt='User icon.' />
                 </NavLink>
             </nav>
         </header>
