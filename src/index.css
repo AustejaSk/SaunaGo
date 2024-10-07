@@ -891,10 +891,14 @@ footer > p {
   header > nav > a {
     font-size: 1.4rem;
   }
+
+  header > nav > a:last-of-type {
+    height: 28px;
+  }
   
   .user-icon {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
   }
 
   footer {
@@ -915,6 +919,7 @@ footer > p {
 
   .hero-section {
     height: calc(100vh - 100px);
+    min-height: 600px;
     background-color: #929292;
     background-image: url(./images/hero-desktop.jpg);
     background-blend-mode: multiply;
@@ -1061,6 +1066,7 @@ footer > p {
 @media (min-width: 1000px) {
 
   header {
+    height: 80px;
     padding: 0 50px;
   }
 
@@ -1068,9 +1074,17 @@ footer > p {
     gap: 30px;
   }
 
+  header > nav > a {
+    font-size: 1.1rem;
+  }
+
+  header > nav > a:last-of-type {
+    height: 24px;
+  }
+
   .user-icon {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
   }
 
   .logo {
@@ -1081,9 +1095,18 @@ footer > p {
     padding: 0 50px;
   }
 
+  footer {
+    height: 85px;
+  }
+
+  footer > p {
+    font-size: 1rem;
+  }
+
   /* Hero page */
 
   .hero-section {
+    height: calc(100vh - 80px);
     background-color: #929292;
     background-image: url(./images/hero-desktop.jpg);
     background-blend-mode: multiply;
